@@ -22,6 +22,14 @@ public class Jurnalno1 {
         for (int i = 0; i < n; i++) {
             System.out.print(fib[i] +  " ");
         }
+  }
+  
+  public static void mengambilSpecialKarakter(String kalimat){
+        String kalimatBaru = kalimat.replaceAll("[a-zA-Z0-9 ]*", "");
+        System.out.println("Spesial Karakter : " + kalimatBaru);
+        String [] splitKalimat = kalimatBaru.split("");
+        System.out.println("Jumlah special karakter : " + splitKalimat.length);
+        
     }
- 
+
 }
